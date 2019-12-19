@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background: darkblue;
+  }
+  
+  .panels {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+  }
+  
+  .panel1 {
+    background-image: url(./imgs/406760_2182610458302_1445887311_n.jpg);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .panel2 {
+    background-image: url(./imgs/c157e56c686e442e1f05fe3b240f1a9c.jpeg);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .panel3 {
+    background-image: url(./imgs/large.jpg);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .panel4 {
+    background-image: url(./imgs/pexels-photo-2832432.jpg);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .panel5 {
+    background-image: url(./imgs/pexels-photo-604671.jpeg);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .first_text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: seashell;
+  }
+
+  .middle_text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: seashell;
+  }
+
+  .last_text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: seashell;
+  }
+
+  .panels :hover {
+    height: 100%;
+    width: 40%;
+    transition: width .5s, height .3s, font-size .3s;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
