@@ -1,0 +1,61 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.background {
+    background: no-repeat url(./imgs/show1.jpeg);
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.boxes {
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: rgba(41, 41, 41, 0.5);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: width .3s, height .3s, font-size .3s;
+}
+
+.boxes:hover {
+    width: 80px;
+    height: 80px;
+    border-color: #ffd000;
+    cursor: pointer;
+    border: 3px solid rgb(255, 208, 0);
+    background-color: rgba(199, 35, 221, 0.199);
+    font-size: 20px;   
+}
+
+.boxes .key {
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: bold;
+    transition: font-size .3s;
+    color: white;
+}
+
+.boxes:hover .key {
+    font-size: 34px;
+}
+
+.sound {
+    font-family: 'Segoe UI';
+    color: rgb(250, 162, 0);
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 4px;
+}
