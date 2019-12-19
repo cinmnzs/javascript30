@@ -1,0 +1,78 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 2rem;
+}
+
+html {
+    background: no-repeat url(./imgs/horizon.jpeg) center / cover fixed;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    border: 5px solid rgb(2, 155, 160);
+    border-radius: 50%;
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    transform: translateY(30px);
+    box-shadow:
+      0 0 0px 2px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 2px #25252562,
+      inset 0 0 12px black,
+      0 0 10px rgba(0, 0, 0, 0.137);
+}
+
+.clock-face {
+    transform: translateY(89px) translateX(-5px);
+}
+
+.base.hour {
+    background: rgba(40, 196, 243, 0.815);
+    border-radius: 15px;
+    height: 4px;
+    width: 70px;
+    position: absolute;
+    top: auto;
+    transform-origin: 135%;
+    transform: rotate(90deg) translateX(25px);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1)
+}
+
+.base.minute {
+    background: rgba(12, 227, 255, 0.863);
+    border-radius: 15px;
+    height: 4px;
+    width: 88px;
+    position: absolute;
+    top: auto;
+    transform-origin: 103%;
+    transform: rotate(45deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.base.second {
+    background: rgba(106, 231, 253, 0.815);
+    border-radius: 15px;
+    height: 4px;
+    width: 95px;
+    position: absolute;
+    top: auto;
+    transform-origin: 100%;
+    transform: rotate(45deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
